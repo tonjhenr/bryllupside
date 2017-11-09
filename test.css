@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+ Side: Forlovere
+--------------------------------------------------------------*/
+
+section#forlovere{
+	max-width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:7%;
+	background-color:#f6f6f6;
+}
+#forlovere .two-columns{
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 5%;
+}
+
+#forlovere .two-column-item{
+	background: white;
+	max-width: 400px;
+	padding:2%;
+}
+
+.forlover-label{
+	background-color: green;
+	padding: 1%;
+	position: absolute;
+	max-width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: -50px;
+	display: inline;
+    //padding: 8px 20px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 3px;
+}
+p span{
+	font-size: 24px;
+    letter-spacing: 3px;
+    margin-top: 9px;
+}
+.forlover-info img{
+	max-height:200px;
+	max-width: auto;
+}
+.forlover-info{
+	width: 100%;
+	text-align:center;	
+}
+.forlover-info h4{
+	padding-top:2%;
+}
+
+.social {
+  display: block;
+  margin-top: 2.375rem;
+}
+.social a {
+  display: inline-block;
+  margin-left: 1.6875rem;
+}
+.social a:first-child {
+  margin-left: 0;
+}
+/*--------------------------------------------------------------
+ Side: Brudepiker
+--------------------------------------------------------------*/
+.brudepiker h1 { 
+	text-align:center;
+	padding-top: 2%;
+	padding-bottom: 0;
+	margin-bottom:0;
+	
+}
+.brudepiker .container{
+    margin-top:100px; 
+	background-color: white;
+	height: 80vh ;
+	}
+.brudepiker .container .carousel{
+	margin-top: 0;
+	padding-top:0;
+	}
+/*.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}*/
+.left,
+.right {
+	cursor: pointer;
+}
+/*
+.two-column-item .forlover-info{
+	opacity:1;
+	transform:translateX(-20px);
+}
+.two-column-item .forlover-info .is-showing{
+	opacity:0;
+	transform:translateX(0px);
+	background-color:yellow;
+}*/

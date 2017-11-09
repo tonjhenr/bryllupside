@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Bryllupside 1</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="timeplan.css">
+	<link rel="stylesheet" href="mediaqueries.css">
+		<link rel="stylesheet" href="foundation.css">
+</head>
+<body class="timeplan">
+
+	<!-- Header -->
+	<header class="default">
+		<a class="burger-nav"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+
+		<div id="myNav" class="overlay">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div>
+  	<nav>
+			<ul>
+				<li><a title="hjem" href="index.html">Hjem</a></li>
+				<li><a title="Forlovere" href="forlovere.html">Forlovere</a></li>
+				<li><a title="Timeplan" href="timeplan.html">Timeplan</a></li>
+				<li class="current-page"><a title="RSVP" href="rsvp.html">RSVP</a></li>
+				<li><a title="Gaver" href="gaver.html">Gaver</a></li>
+				<li><a title="Kontakt" href="kontakt.html">Kontakt</a></li>
+			</ul>
+	</nav>
+  </div>
+</div>
+	</header>
+	
+	<!-- rsvp section -->
+	<section class="paper row rsvp">
+
+<div class="page-wrap">
+		<h2>RSVP</h2>
+		<hr>
+		<p class="rsvp-note">Hvis du ikke har sagt i fra om du kommer i bryllupet vårt, vennligst gi oss beskjed så fort som mulig om du kan komme. </p>
+       
+        <form id="form" class="form" action="#" method="get">
+	<div class="input-group">
+	<input type="text" required>
+	<label> Navn </label>
+	</div>
+	
+	<div class="input-group">
+	<input type="email" required>
+	<label>E-post</label>
+	</div>
+	
+
+<label class="select">Kommer du?</label>
+<select class="answer">
+    <option selected>Velg</option>
+  <option>Ja</option>
+  <option>Nei</option>
+</select>
+
+<label class="select">Hvor mange kommer?</label>
+<select class="answer ant">
+    <option selected>Velg</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+	
+	<div class="input-group">
+      <textarea rows="3" cols="40"></textarea>
+      <label>Beskjed</label>
+	</div>	
+            <input class="button" type="submit" value="Send" id="submit"/>			
+        </form>
+		</div>
+		</section>
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/rsvp.js"></script>
+		 <script src="js/menu.js"></script>
+
+</body>
+</html>

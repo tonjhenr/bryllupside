@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>RSVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="rsvp.css">
+  <link rel="stylesheet" href="timeplan.css">
+
+
+</head>
+<body>
+
+        <section class="paper row">
+
+<div class="page-wrap">
+		<h2>RSVP</h2>
+		<hr>
+		<p>Vennligst gi beskjed om du kan komme i vårt bryllup innen 15. mars 2017</p>
+       
+        <form id="form" class="form" action="#" method="get">
+	<div class="input-group">
+	<input type="text" required>
+	<label> Navn </label>
+	</div>
+	
+	<div class="input-group">
+	<input type="email" required>
+	<label>E-post</label>
+	</div>
+	
+<label class="select">Kommer du?</label>
+<select id="answer">
+    <option selected>Velg</option>
+  <option>Ja</option>
+  <option>Nei</option>
+</select>
+<label class="select">Hvor mange kommer?</label>
+<select id="answer">
+    <option selected>Velg</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+	
+	<div class="input-group">
+      <textarea rows="2" cols="40"></textarea>
+      <label>Beskjed</label>
+	</div>
+	
+            <input type="submit" value="Send" id="submit"/>
+        </form>
+		</div>
+    </section>
+	
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="rsvp.js"></script>
+
+</body>
+</html>

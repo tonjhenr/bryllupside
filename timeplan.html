@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Bryllupside 1</title>
+	<link rel="stylesheet" href="foundation.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="timeplan.css">
+	<link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body class="timeplan">
+
+	<!-- Header -->
+	<header class="default">
+		<a class="burger-nav"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+
+		<div id="myNav" class="overlay">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div>
+  	<nav>
+			<ul>
+				<li><a title="hjem" href="index.html">Hjem</a></li>
+				<li><a title="Forlovere" href="forlovere.html">Forlovere</a></li>
+				<li class="current-page"><a title="Timeplan" href="timeplan.html">Timeplan</a></li>
+				<li><a title="RSVP" href="rsvp.html">RSVP</a></li>
+				<li><a title="Gaver" href="gaver.html">Gaver</a></li>
+				<li><a title="Kontakt" href="kontakt.html">Kontakt</a></li>
+			</ul>
+	</nav>
+  </div>
+</div>
+	</header>
+	
+	<!-- Timeplan section -->
+	<section class="paper row center">
+		<h2>Timeplan</h2>
+		<hr>
+		<div class="two-columns">
+		<div class="two-column-item">
+			<h3>Seremoni</h3>
+		<span class="bilder-timeplan">
+				  <img src="img/kirke.jpg" alt="bride headshot" width="173">
+				</span>
+			<p class="info">
+				Kl. 10:00 <br>
+				Frogner kirke <br>
+				2016 FROGNER
+			</p>
+		<p> <span class="veibeskrivelse">
+						<a title="Veibeskrivelse" href="https://www.google.no/maps/place/Frogner+Kirke/@60.0200661,11.1033455,17z/data=!3m1!4b1!4m5!3m4!1s0x46417c1e59e2f407:0xb2112864ba7a62d9!8m2!3d60.0200661!4d11.1055342" target="_blank"><i class="fa fa-location-arrow fa-2x"></i>Veibeskrivelse</a>
+			</span></p>
+		
+		</div>
+		<div class="two-column-item">
+		<h3>Fest</h3>
+		<span class="bilder-timeplan">
+					<img src="img/doktorgarden.jpg" alt="bride headshot" width="173">
+				</span>
+				<p class="info center">
+				Kl. 16:00 <br>
+				Doktorgården <br>
+				Kirkegata 2, <br>
+				2000 Lillestrøm
+			</p>
+		<p><span class="veibeskrivelse">
+						<a title="Veibeskrivelse" href="https://www.google.no/maps/place/Doktorg%C3%A5rden/@59.9543498,11.0460051,15z/data=!4m2!3m1!1s0x0:0xc973a1c7b08e121?sa=X&ved=0ahUKEwjQloGN8cbQAhUE_iwKHS0iDusQ_BIIgwEwDg" target="_blank"><i class="fa fa-location-arrow fa-2x"></i>Veibeskrivelse</a>
+			</span></p>
+		
+		</div>
+		</div>
+		
+	</section><!-- End timeplan -->
+
+	<script>
+		jQuery(document).foundation();
+	</script>
+	 <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500|Prata|Lato:300,400,700);
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Global Styles
+	1.1 Top Bar
+2.0 Homepage
+3.0 3D Slider
+4.0 Scattered Gallery
+5.0 Subpages
+6.0 Animations
+7.0 Media Queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 GLOBAL STYLES
+--------------------------------------------------------------*/
+html {
+  -webkit-font-smoothing: antialiased !important;
+}
+body{
+  margin:0;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Prata", serif;
+  color: #fff;
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 10.8125rem;
+  text-shadow: 0px 5px 4px rgba(16, 16, 16, 0.34);
+}
+h1 em {
+  font-style: normal;
+  color: #788aa3;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Prata", serif;
+  font-size: 1.875rem;
+  color: #fff;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  padding-bottom: 2.25rem;
+}
+h2:after {
+  content: "";
+  width: 116px;
+  height: 1px;
+  position: absolute;
+  background: #788aa3;
+  left: 50%;
+  bottom: 0;
+  margin-left: -58px;
+}
+
+h3 {
+  font-family: "Prata", serif;
+  font-size: 1.125rem;
+  color: #003768;
+  text-align: center;
+  margin-top: 2.1875rem;
+  margin-bottom: 0;
+}
+
+h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #033a6b;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9375rem;
+}
+
+.home section {
+  width: 100%;
+  float: left;
+}
+
+.center{
+	
+}
+table{
+  background: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+/*--------------------------------------------------------------
+2.0 HOMEPAGE
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+HEADER
+--------------------------------------------------------------*/
+header.default {
+  width: 100%;
+  height: 826px;
+  background: url("img/header.jpeg") top center no-repeat;
+  background-size: cover;
+}
+header.default nav {
+  margin-top: 1.6875rem;
+  padding: 1%;
+  position: relative;
+  z-index: 2001;
+  background: rgba(120,138,163, 0.2);
+}
+header.default nav ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0 0 0 -2.75rem;
+  text-align: center;
+  line-height: 1;
+
+}
+header.default nav ul li {
+  display: inline-block;
+}
+header.default nav ul li a {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff !important;
+  letter-spacing: 2px;
+  position: relative;
+  margin-left: 2.75rem;
+}
+header.default nav ul li a:hover {
+  color: #fff;
+  
+}
+header.default nav ul li a:before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: url("img/icon_flowers.png") no-repeat;
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+header.default nav ul li a:hover:before {
+  opacity: 1;
+}
+header.default nav ul li.current-page a:before {
+  opacity: 1;
+}
+header.default nav ul li a:hover, header.default nav ul li.current-page a {
+  border-bottom: 1px solid #fff;
+}
+.burger-nav, .closebtn{
+   visibility: hidden;
+}
+
+.ceremony-date {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin-top: 1.4375rem;
+  position: relative;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+.ceremony-date sup {
+  font-size: 0.875rem;
+}
+.ceremony-date:after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: #90a9cd;
+  position: absolute;
+  left: 50%;
+  bottom: -31px;
+  margin-left: -60px;
+}
+
+body.home header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+COUNTDOWN SECTION
+--------------------------------------------------------------*/
+
+#countdownContainer{
+ position: absolute;
+  left:50%;
+  bottom: -5%;
+  transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    min-height: 120px;
+    display: inline-block;    
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+#countdownContainer > div{
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#countdownContainer div > span{
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 50px;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/*#countdownContainer td{
+  padding: 0.2rem 2rem;
+  white-space: nowrap;
+  text-align:center;
+  text-shadow: 2px 2px 4px #000000;
+    border-style: solid;
+  border-spacing: 30px;
+}
+
+#countdownContainer .antall{
+  font-size: 50px;
+}
+#countdownContainer .label{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}*/
+/*--------------------------------------------------------------
+COUPLE SECTION
+--------------------------------------------------------------*/
+#couple {
+  max-width: none;
+  height: 889px;
+  background: url("img/couple-bg.jpg") center top no-repeat;
+  background-size: cover;
+  margin-top: 826px;
+  position: relative;
+  z-index: 2;
+}
+#couple .columns.large-12 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  position: relative;
+}
+#couple .columns.large-4 {
+  padding-top: 9.8125rem;
+}
+#couple .columns.large-4:first-child + .columns.large-4 {
+  padding-top: 4.375rem;
+}
+#couple h3 {
+  display: block;
+  font-size: 3.75rem;
+  color: #788aa3;
+  font-family: "Prata", serif;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#couple .desc {
+  font-size: 0.8125rem;
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  max-width: 260px;
+  margin-top: 1.5rem;
+  line-height: 22px;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+#couple .social {
+  display: block;
+  margin-top: 2.375rem;
+}
+#couple .social a {
+  display: inline-block;
+  margin-left: 1.6875rem;
+}
+#couple .social a:first-child {
+  margin-left: 0;
+}
+#couple .headshot {
+	height:260px;
+  position: absolute;
+  top: -106px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.giant-ampersand {
+  font-size: 13.25rem;
+  font-family: "Prata", serif;
+  color: #788aa3;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+ Side: Timeplan
+--------------------------------------------------------------*/
+ .timeplan {
+  width: 100%;
+  height: 826px;
+  background: url("img/flowers.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.paper{
+  max-width: 700px;
+  margin: 100px auto 50px auto;
+  height: 500px;
+  position: relative;
+  background:#fff;
+}
+
+.paper h4{
+	text-align:center;
+	padding-top: 2%;
+}
+.paper hr{
+	width:30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+ Side: rsvp
+--------------------------------------------------------------*/
+
+input, textarea {
+  background: none;
+  color: black;
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+input[type="text"], input[type="email"], textarea, select#answer  {
+  border: none;
+  border-bottom: solid 2px #999;
+}
+input[type="text"]:focus, input[type="text"]:active, input[type="email"]:focus, input[type="email"]:active, textarea:focus, textarea:active {
+  outline: none;
+  border-bottom: solid 2px #8e44ad;
+}
+input[type="submit"]{
+	padding: 10px 20px;
+	margin-top: 30px;
+}
+
+input[type="submit"]:active {
+  color: white;
+  background: #21a1e1;
+}
+
+.input-group {
+  display: ;
+  margin-top: 10px;
+  margin-right: 20px;
+  position: relative;
+}
+.input-group input, .input-group textarea {
+  padding: 15px 0px;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #999;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+.input-group input:focus + label,
+.input-group textarea:focus + label{
+	color:#8e44ad;
+}
+
+.input-group input:focus + label,
+.input-group input.has-value + label,
+.input-group textarea:focus + label,
+.input-group textarea.has-value + label  {
+  top: 0;
+  font-size: 12px;
+}
+label.select{
+padding-top: 2%;
+  position: absolute;
+  //top: 50%;
+  //left: 0px;
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #999;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+select#answer {
+  margin-top:4%;
+  margin-right: 4%;
+  font-size: inherit;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+   outline: none;
+}
+
+
+
